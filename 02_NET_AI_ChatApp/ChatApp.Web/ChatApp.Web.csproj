@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>30fadb2f-1f21-4b0e-b6d2-e1739e7e8e00</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Keep existing packages -->
+    <PackageReference Include="Aspire.Azure.AI.OpenAI" Version="9.5.2-preview.1.25522.3" />
+    <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="9.10.0-preview.1.25513.3" />
+    <PackageReference Include="Microsoft.Extensions.AI" Version="9.10.0" />
+    <PackageReference Include="Microsoft.SemanticKernel.Core" Version="1.66.0" />
+
+    <!-- Add Microsoft Agent Framework packages -->
+    <PackageReference Include="Microsoft.Agents.AI" Version="1.0.0-preview.251009.1" />
+    <PackageReference Include="Microsoft.Agents.AI.Abstractions" Version="1.0.0-preview.251009.1" />
+    <PackageReference Include="Microsoft.Agents.AI.Hosting" Version="1.0.0-preview.251009.1" />
+    <PackageReference Include="Microsoft.Agents.AI.Hosting.OpenAI" Version="1.0.0-alpha.251009.1" />
+    <PackageReference Include="Microsoft.Agents.AI.OpenAI" Version="1.0.0-preview.251009.1" />
+
+    <!-- Keep other existing packages -->
+    <PackageReference Include="PdfPig" Version="0.1.12-alpha-20251015-255e7" />
+    <PackageReference Include="System.Linq.Async" Version="7.0.0-preview.1.g24680b5469" />
+    <PackageReference Include="Microsoft.SemanticKernel.Connectors.SqliteVec" Version="1.66.0-preview" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ChatApp.ServiceDefaults\ChatApp.ServiceDefaults.csproj" />
+  </ItemGroup>
+
+</Project>
