@@ -15,7 +15,7 @@ AIAgent agent = new AzureOpenAIClient(
     new Uri(endpoint),
     new AzureKeyCredential(key))
     .GetChatClient(deployment)
-    .CreateAIAgent(instructions: "Tell me which language is most popular for development.", name: "Developer Assistant");
+    .CreateAIAgent(instructions: "You are a senior software developer.", name: "Developer Assistant");
 
 // Invoke the agent with a multi-turn conversation, where the context is preserved in the thread object.
 AgentThread thread = agent.GetNewThread();
